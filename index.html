@@ -2,12 +2,13 @@
 <html lang="ru"> 
 <head>
 	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet">
 	<title>HTML Academy: Нёрдс</title>
 </head>
 <body>
 	<header>
 		<div class="logo"> 
-			<img src="//placehold.it/160x65" alt="nerds-logo">
+			<img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo">
 		</div>	
 		<nav class="header-nav">
 			<ul>
@@ -22,28 +23,27 @@
 		</div>
 		<section class="slider">
 	<input type="radio" name="slider" id="slide1">
-	<div class="first">
+	<div class="slider-item">
 	<b>Долго, дорого, скрупулезно.</b>
 	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>	
-	<div class="slider-btn">
-		<a href="#">Узнать больше</a>
-	</div>
+	
+		<a href="#" class="slider-btn">Узнать больше</a>
+	
 	</div>
 	<input type="radio" name="slider" id="slide2">
-	<div class="second">
+	<div class="slider-item">
 	<b>Любим математику как никто другой</b>
 	<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
-	<div class="slider-btn">
-		<a href="#">Узнать больше</a>
+	
+		<a href="#" class="slider-btn">Узнать больше</a>
 	</div>
 	</div>
 	<input type="radio" name="slider" id="slide3">
-	<div class="third">
+	<div class="slider-item">
 	<b>Только ночь, только хардкор</b>
 	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-	<div class="slider-btn">
-		<a href="#">Узнать больше</a>
-	</div>
+	
+		<a href="#" class="slider-btn">Узнать больше</a>
 	</div>
 	<div class="label">
 		<label for="slide1"></label>
@@ -71,7 +71,7 @@
 		</section>
 		<div class="about">
 			<div class="left">
-				<p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара. </p>
+				<p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расёт превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<strong>Выполняем заказы на разработку:</strong>
 				<ul>
@@ -91,24 +91,23 @@
 		</div>	
 			<section class="partners">
 			<div class="html-academy">
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="//placehold.it/199x68" alt="html-academy"></a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmllogo.png" width="199" width="68" alt="html-academy"></a>
 			</div>
 			<div class="borodinski">	
-				<a href="#"><img src="//placehold.it/209x90" alt="borodinski"></a>
+				<a href="#"><img src="img/borodinskilogo.png" width="209" height="90" alt="borodinski"></a>
 			</div>
 			<div class="pink">
-				<a href="#"><img src="//placehold.it/185x52" alt="pink"></a>
+				<a href="#"><img src="img/pinklogo.png" width="209" height="90" alt="pink"></a>
 			</div>
 			<div class="mishka">	
-				<a href="#"><img src="//placehold.it/173x84" alt="mishka"></a>
+				<a href="#"><img src="img/mishkalogo.png" width="173" height="84" alt="mishka"></a>
 			</div>
 		</section>
 		<div class="map">
-			<img src="//placehold.it/1725x805" alt="map">
+			<img src="img/map.jpg" width="1140" height="416" alt="map">
 			<div class="write">
 				<p>Nёrds design studio</p>
 				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-				<br>
 				<p>тел: +7 (812) 275 75-75</p>
 				<div class="map-btn">
 					<a href="#">Напишите нам</a>
@@ -116,31 +115,32 @@
 				</div>
 			</div>	
 	</main>	
-	<footer>
-			<div class="social">
-				<div class="vk">
-					<a href="https://vk.com/feed"></a>
-				</div>
-					<div class="fc">
-					<a href="https://www.facebook.com/"></a>	
-				</div>
-				<div class="inst">	
-					<a href="https://www.instagram.com/"></a>
-				</div>
+		<footer>
+		<div class="social">
+			<ul class="social-item">
+			<li class="social-item-list">
+				<a href="#"></a>
+			</li>	
+			
+			<li class="social-item-list">
+				<a href="#"></a>
+			</li>
+			<li class="social-item-list">
+				<a href="#"></a> </li>
+				</ul>
+		</div>		
 			<strong>Давайте дружить, это выгодно!</strong>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-			<form name="write-us" action="?" method="get">
-				<span>Напишите нам</span>
-				 <label for="name">Ваше имя</label>
-             <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-							<label for="email">Ваш e-mail:</label>
-							<input type="text" name="email" id="email" placeholder="Для отправки ответа">
-							<label for="text">Текст письма:</label>
-							<textarea name="text" id="name" rows="10" placeholder="В свободной форме"></textarea>
-							<input type="submit" value="Отправить">
-			</form>
-		</footer>
-	</body>
-	</html>
-	
+		<div class="modal">
+			<form name="write-us" action="?" method="post"> <span>Напишите нам</span>
+				<label for="name">Ваше имя</label>
+				<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+				<label for="text">Текст письма:</label>
+				<textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
+				<input type="submit" value="Отправить"> </form>
+		</div>
+	</footer>
+</body>
+</html>
