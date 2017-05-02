@@ -1,21 +1,28 @@
 body {
-	font-size: 16px;
-	line-height: 24px;
-	font-family: "Roboto", "Arial", serif;
-	color: #283136;	
-	font-weight: normal;
+    
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #283136; 
+    padding: 0;
+    margin: 0;
 }
 
-.features h2 {
-	font-size: 24px;
-	line-height: 30px;
-	color: #000000;
-	font-weight: bold;
+.header-main {
+    
+    font-size: 24px;
+    line-height: 1.25em; 
 }
 
-.laylout h3 {
-	font-size: 18px;
-	font-weight: 30px;
-	color: #000000;
-	font-weight: bold;
+.header-assortment  {
+    
+    font-size: 18px;
+    line-height: 1.6em;
 }
+
+.header-basket {
+    
+    font-size: 55px;
+    line-height: 55px;
+}
+
