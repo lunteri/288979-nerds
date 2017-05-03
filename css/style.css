@@ -1,28 +1,298 @@
 body {
-    
-    font-size: 16px;
-    line-height: 1.5em;
-    font-family: "Roboto", "Arial", sans-serif;
-    color: #283136; 
-    padding: 0;
-    margin: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
+  padding: 0;
+  margin: 0;
 }
 
 .header-main {
-    
-    font-size: 24px;
-    line-height: 1.25em; 
+  font-size: 24px;
+  line-height: 1.25em;
 }
 
-.header-assortment  {
-    
-    font-size: 18px;
-    line-height: 1.6em;
+.header-assortment {
+  font-size: 18px;
+  line-height: 1.6em;
 }
 
 .header-basket {
-    
-    font-size: 55px;
-    line-height: 55px;
+  font-size: 55px;
+  line-height: 55px;
 }
 
+/* Центровщик + clearfix */
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Шапка сайта */
+
+.logo {
+  width: 180px;
+  min-height: 80px;
+  float: left;
+}
+
+.main-navigation {
+  width: 800px;
+  float: left;
+  min-height: 80px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 55px;
+  line-height: 80px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.basket {
+  width: 180px;
+  min-height: 80px;
+  float: right;
+}
+
+.basket a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 80px;
+}
+
+.navigation {
+  float: left;
+}
+
+/*Слайдер*/
+
+.section {
+  margin-bottom: 80px;
+}
+
+/*Особенности*/
+
+.features-list-item {
+  display: inline-block;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.features-list {
+  padding: 0;
+  height: 300px;
+}
+
+.features-list a {
+  text-decoration: none;
+}
+
+.features-list-item:last-child {
+  margin: 0;
+}
+
+/*О нас*/
+
+.left {
+  float: left;
+  width: 700px;
+  margin-right: 60px;
+}
+
+.right {
+  float: right;
+  width: 400px;
+}
+
+.right ul {
+  list-style-type: none;
+}
+
+.about {
+  height: 528px;
+}
+
+
+/*Парнёры*/
+
+.partners div {
+  display: inline-block;
+  height: 185px;
+  width: 280px;
+  margin-right: 10px;
+}
+
+.partners div:last-child {
+  width: 260px;
+  margin: 0;
+}
+
+.partners {
+  margin-bottom: 80px;
+}
+
+/*Карта*/
+.map img {
+  width: 100%;
+}
+
+.write {
+  display: none;
+}
+
+.map {
+  margin-bottom: 70px;
+}
+
+/*Подвал*/
+
+.social li {
+  width: 80px;
+  display: inline-block;
+}
+
+social {
+  width: 260px;
+  margin-right: 140px;
+}
+
+.friends {
+  width: 560px;
+}
+
+.modal {
+  display: none;
+}
+
+/*Каталог*/
+
+/*Фильтры*/
+
+.header-catalog {
+  width: 730px;
+  margin: auto;
+  margin-bottom: 115px;
+}
+
+.filter-form-group input {
+  display: none;
+}
+
+.filter-form-group label {
+  display: block;
+}
+
+.filters {
+  float: left;
+  width: 260px;
+}
+
+.filters form {
+  width: 260px;
+}
+
+/*Сортировка*/
+
+.right-col {
+  width: 760px;
+  float: right;
+}
+
+.right-col b {
+  float: left;
+  width: 140px;
+}
+
+.sort-wrapper {
+  float: right;
+  width: 360px;
+}
+
+.sort-list {
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  font-size: 0;
+}
+
+.sort-list li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: initial;
+  margin-right: 22px;
+}
+
+.sort-list li:nth-last-child(2) {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.sort-list li:last-child {
+  margin: 0;
+}
+
+.sort-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sort-list {
+  margin: 0;
+  padding: 0;
+}
+
+/*Карточки*/
+
+.product-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.product-item {
+  width: 360px;
+  height: 617px;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.assortment {
+  width: 760px;
+  float: right;
+  margin-top: 60px;
+}
+
+.product {
+  font-size: 0;
+}
+
+.pagination-catalog {
+  width: 460px;
+}
+
+/*Пагинация*/
+
+.pagination-catalog li {
+  display: inline-block;
+  min-width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.pagination-catalog a {
+  font-size: 18px;
+}
