@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -9,7 +10,9 @@
   <header class="main-header">
     <div class="container clearfix">
       <nav class="navigation clearfix">
-        <div class="logo"> <img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"> </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"></a>
+        </div>
         <ul class="main-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -75,44 +78,44 @@
         <div class="product">
           <article class="product-item"> <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
             <div class="card">
-              <h3 class="header-assortment">Седона</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">Sedona</a></h3>
               <p>Информационный сайт для туристов</p> <a href="#" class="price-btn">9&thinsp;900 руб.</a> </div>
           </article>
           <article class="product-item"> <img src="img/pink.jpg" width="360" height="576" alt="pink">
             <div class="card">
-              <h3 class="header-assortment">Пинк</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">Pink</a></h3>
               <p>Сайт о приложении</p> <a href="#" class="price-btn">7&thinsp;970 руб.</a> </div>
           </article>
           <article class="product-item"> <img src="img/barbershop.jpg" width="360" height="576" alt="barbershop">
             <div class="card">
-              <h3 class="header-assortment">Бородински</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">Borodinski</a></h3>
               <p>Сайт о лучшей парикмахерской</p> <a href="#" class="price-btn">8&thinsp;200 руб.</a> </div>
           </article>
           <article class="product-item"> <img src="img/mishka.jpg" width="360" height="576" alt="mishka">
             <div class="card">
-              <h3 class="header-assortment">Мишка</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">Mishka</a></h3>
               <p>Интернет-магазин вязаных товаров</p> <a href="#" class="price-btn">6&thinsp;900 руб.</a> </div>
           </article>
           <article class="product-item"> <img src="img/aplus.jpg" width="360" height="576" alt="a+">
             <div class="card">
-              <h3 class="header-assortment">А+</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">A+</a></h3>
               <p>Сайт, который позволяет учиться</p> <a href="#" class="price-btn">9&thinsp;900 руб.</a> </div>
           </article>
           <article class="product-item"> <img src="img/kvast.jpg" width="360" height="576" alt="kvast">
             <div class="card">
-              <h3 class="header-assortment">Кваст</h3>
+              <h3 class="header-assortment"><a href="#" class="card-btn">Kvast</a></h3>
               <p>Сайт с ассортиментом лучшего кваса</p> <a href="#">8&thinsp;900 руб.</a> </div>
           </article>
         </div>
-        <div class="pagination-catalog">
-          <ul>
-            <li> <a class="active">1</a></li>
-            <li> <a href="#">2</a></li>
-            <li> <a href="#">3</a></li>
-            <li> <a href="#">Следующая</a></li>
-          </ul>
-        </div>
       </section>
+      <nav class="pagination-catalog">
+        <ul>
+          <li> <a class="active">1</a></li>
+          <li> <a href="#">2</a></li>
+          <li> <a href="#">3</a></li>
+          <li> <a href="#">Следующая</a></li>
+        </ul>
+      </nav>
     </div>
   </main>
   <div class="map"> <img src="img/map.jpg" width="1140" height="416" alt="map">
@@ -125,33 +128,41 @@
   </div>
   <footer>
     <div class="container">
-      <div class="social">
-        <ul class="social-item">
-          <li class="social-item-list">
-            <a href="#"></a>
-          </li>
-          <li class="social-item-list">
-            <a href="#"></a>
-          </li>
-          <li class="social-item-list">
-            <a href="#"></a>
-          </li>
-        </ul>
+      <ul class="social-item">
+        <li class="social-item-list">
+          <a href="#" title="vk.com">Вконтакте</a>
+        </li>
+        <li class="social-item-list">
+          <a href="#" title="facebook.com">Фейсбук</a>
+        </li>
+        <li class="social-item-list">
+          <a href="#" title="instagram.com">Инстаграм</a>
+        </li>
+      </ul>
+      <div class="friends"> <strong>Давайте дружить, это выгодно!</strong>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
-    <div class="friends"> <strong>Давайте дружить, это выгодно!</strong>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    <div class="modal">
-      <form name="write-us" action="?" method="post"> <span>Напишите нам</span>
-        <label for="name">Ваше имя</label>
-        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+  </footer>
+  <div class="modal">
+    <form name="write-us" action="?" method="post">
+      <h3>Напишите нам</h3>
+      <div class="half-width">
+        <div class="flex-one">
+          <label for="name">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="flex-two">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <div class="flex-three">
         <label for="text">Текст письма:</label>
         <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
-        <input type="submit" value="Отправить"> </form>
-    </div>
-  </footer>
+      </div>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
 </body>
 </html>

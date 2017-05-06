@@ -1,10 +1,11 @@
 body {
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
   color: #283136;
   padding: 0;
   margin: 0;
+  min-width: 1200px;
 }
 
 .header-main {
@@ -29,7 +30,7 @@ body {
   padding: 0 20px;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -37,42 +38,69 @@ body {
 
 /* Шапка сайта */
 
+.header-catalog h1 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 5px 0 45px 25px;
+  font-weight: normal;
+}
+
+.main-header {
+  background-color: #eeeeee;
+  padding-top: 50px;
+}
+
 .logo {
   width: 180px;
-  min-height: 80px;
   float: left;
 }
 
 .main-navigation {
   width: 800px;
   float: left;
-  min-height: 80px;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 25px;
+  font-size: 0;
+  list-style: none;
+  text-transform: uppercase;
 }
 
 .main-navigation li {
   display: inline-block;
-  margin-right: 55px;
-  line-height: 80px;
+  line-height: 30px;
+  vertical-align: center;
+  font-size: 16px;
+  margin-top: 25px;
 }
 
 .main-navigation a {
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding-right: 45px;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
 }
 
 .basket {
-  width: 180px;
-  min-height: 80px;
+  max-width: 72px;
   float: right;
 }
 
 .basket a {
   text-decoration: none;
   color: #000000;
-  line-height: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 25px 0px;
+  padding-bottom: 50px;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 .navigation {
@@ -81,8 +109,9 @@ body {
 
 /*Слайдер*/
 
-.section {
+.slider {
   margin-bottom: 80px;
+  background-color: #eeeeee;
 }
 
 /*Особенности*/
@@ -91,32 +120,51 @@ body {
   display: inline-block;
   width: 300px;
   margin-right: 100px;
+  vertical-align: center;
 }
 
 .features-list {
   padding: 0;
-  height: 300px;
+  margin-top: 256px;
+  margin-bottom: 80px;
 }
 
 .features-list a {
   text-decoration: none;
+  margin-bottom: 80px;
 }
 
 .features-list-item:last-child {
   margin: 0;
 }
 
+.features-list-item h2 {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.features-list-item p {
+  margin-top: 35px;
+}
+
 /*О нас*/
 
-.left {
+.product-col-left {
   float: left;
   width: 700px;
   margin-right: 60px;
 }
 
-.right {
+.product-col-left p:first-child {
+  font-size: 45px;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+
+.product-col-right {
   float: right;
   width: 400px;
+  margin-top: 289px;
 }
 
 .right ul {
@@ -124,20 +172,24 @@ body {
 }
 
 .about {
-  height: 528px;
+  margin-bottom: 79px;
 }
-
 
 /*Парнёры*/
 
-.partners div {
-  display: inline-block;
-  height: 185px;
-  width: 280px;
-  margin-right: 10px;
+.partners ul {
+  padding: 0;
+  margin: 0;
 }
 
-.partners div:last-child {
+.partners li {
+  display: inline-block;
+  width: 280px;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+.partners li:last-child {
   width: 260px;
   margin: 0;
 }
@@ -157,26 +209,98 @@ body {
 
 .map {
   margin-bottom: 70px;
+  position: relative;
 }
 
 /*Подвал*/
 
-.social li {
+.social-item li {
   width: 80px;
   display: inline-block;
+  vertical-align: center;
 }
 
-social {
+.social-item {
   width: 260px;
   margin-right: 140px;
+}
+
+.social-item a {
+  text-decoration: none;
 }
 
 .friends {
   width: 560px;
 }
 
+
+/*Модальное окно*/
+
+
 .modal {
-  display: none;
+  width: 960px;
+  margin: 0 auto;
+  padding: 73px 60px 83px;
+  color: #444444;
+  position: absolute;
+  left: 500px;
+  top: 1500px;
+}
+
+.modal h3 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  width: 760px;
+  display: block;
+}
+
+.half-width {
+  display: flex;
+  flex-direction: row;
+  width: 760px;
+}
+
+.half-width input {
+  width: 329.5px;
+  margin-top: 13px;
+  padding: 16px 14px 14px;
+  margin-bottom: 37px;
+  border: 2px solid #d7dcde;
+}
+
+.flex-one {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.flex-two {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.flex-three {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+}
+
+.flex-three textarea {
+  margin-top: 13px;
+  margin-bottom: 47px;
+  padding: 16px 14px 14px;
+}
+
+.modal input[type="submit"] {
+  color: #ffffff;
+  background-color: #fb565a;
+  width: 260px;
+  padding: 19px 84px 18px 82px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
 }
 
 /*Каталог*/
@@ -204,6 +328,10 @@ social {
 
 .filters form {
   width: 260px;
+}
+
+.filter-form-group {
+  border: none;
 }
 
 /*Сортировка*/
@@ -264,24 +392,73 @@ social {
 
 .product-item {
   width: 360px;
-  height: 617px;
   display: inline-block;
   margin-right: 40px;
+  vertical-align: center;
+  position: relative;
+  margin-bottom: 36px;
 }
 
 .assortment {
   width: 760px;
   float: right;
   margin-top: 60px;
-}
-
-.product {
   font-size: 0;
 }
 
 .pagination-catalog {
   width: 460px;
 }
+
+.product-item .card {
+  display: none;
+}
+
+.product-item:hover .card {
+  display: block;
+}
+
+.card {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #eeeeee;
+  height: 231px;
+  position: absolute;
+  top: 345px;
+}
+
+.card-btn {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.price-btn {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  width: 200px;
+  background-color: #fb565a;
+  min-height: 31px;
+  text-align: center;
+  padding-top: 19px;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-transform: uppercase;
+}
+
 
 /*Пагинация*/
 
