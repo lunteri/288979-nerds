@@ -8,6 +8,11 @@ body {
   min-width: 1200px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header-main {
   font-size: 24px;
   line-height: 1.25em;
@@ -210,6 +215,11 @@ body {
 .map {
   margin-bottom: 70px;
   position: relative;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  min-height: 416px;
+  width: 100%;
+  margin-top: 60px;
 }
 
 /*Подвал*/
@@ -399,6 +409,12 @@ body {
   margin-bottom: 36px;
 }
 
+
+.product-item:nth-of-type(n+5) {
+  margin-bottom: 0px;
+}
+
+
 .assortment {
   width: 760px;
   float: right;
@@ -462,14 +478,22 @@ body {
 
 /*Пагинация*/
 
+.pagination-catalog ul {
+  font-size: 0;
+}
+
 .pagination-catalog li {
   display: inline-block;
   min-width: 50px;
   height: 50px;
   padding-right: 10px;
-  vertical-align: middle;
+  vertical-align: center;
 }
 
 .pagination-catalog a {
   font-size: 18px;
+}
+
+.pagination-catalog {
+  margin-bottom: 60px;
 }
