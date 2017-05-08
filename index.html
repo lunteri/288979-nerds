@@ -119,27 +119,22 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
     <div class="modal">
-      <form name="write-us" action="?" method="post">
-        <h3>Напишите нам</h3>
-        <div class="half-width">
-          <div class="flex-one">
-            <label for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-          </div>
-          <div class="flex-two">
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="Для отправки ответа">
-          </div>
+    <form name="write-us" action="?" method="post">
+      <h3>Напишите нам</h3>
+      <div class="half-width">
+        <div class="flex-el">
+          <label for="name">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
         </div>
-        <div class="flex-three">
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
+        <div class="flex-el">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Для отправки ответа">
         </div>
-        <input type="submit" value="Отправить">
-      </form>
-    </div>
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
+      <input type="submit" class="btn" value="Отправить">
+    </form>
   </div>
 </body>
 </html>

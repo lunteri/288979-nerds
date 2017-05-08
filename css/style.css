@@ -76,7 +76,7 @@ img {
 .main-navigation li {
   display: inline-block;
   line-height: 30px;
-  vertical-align: center;
+  vertical-align: top;
   font-size: 16px;
   margin-top: 25px;
 }
@@ -106,7 +106,12 @@ img {
   padding-bottom: 50px;
   display: inline-block;
   text-transform: uppercase;
+  vertical-align: top;
 }
+
+.basket a:hover {
+  color: #fb565a;
+  }
 
 .navigation {
   float: left;
@@ -125,7 +130,7 @@ img {
   display: inline-block;
   width: 300px;
   margin-right: 100px;
-  vertical-align: center;
+  vertical-align: top;
 }
 
 .features-list {
@@ -191,7 +196,7 @@ img {
   display: inline-block;
   width: 280px;
   margin-right: 10px;
-  vertical-align: center;
+  vertical-align: top;
 }
 
 .partners li:last-child {
@@ -227,7 +232,7 @@ img {
 .social-item li {
   width: 80px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: top;
 }
 
 .social-item {
@@ -250,11 +255,17 @@ img {
 .modal {
   width: 960px;
   margin: 0 auto;
-  padding: 73px 60px 83px;
+  padding: 73px 100px 85px;
   color: #444444;
   position: absolute;
-  left: 500px;
-  top: 1500px;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+ 
 }
 
 .modal h3 {
@@ -263,47 +274,42 @@ img {
   margin-bottom: 50px;
   width: 760px;
   display: block;
+  margin-top: 0;
 }
 
 .half-width {
   display: flex;
   flex-direction: row;
   width: 760px;
+  justify-content: space-between;
 }
 
 .half-width input {
-  width: 329.5px;
+  width: 360px;
   margin-top: 13px;
   padding: 16px 14px 14px;
   margin-bottom: 37px;
   border: 2px solid #d7dcde;
+  box-sizing: border-box;
 }
 
-.flex-one {
+.flex-el {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  width: 360px;
+
 }
 
-.flex-two {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.flex-three {
-  display: flex;
-  flex-direction: column;
-  width: 760px;
-}
-
-.flex-three textarea {
+.modal textarea {
   margin-top: 13px;
   margin-bottom: 47px;
   padding: 16px 14px 14px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.modal input[type="submit"] {
+.btn {
   color: #ffffff;
   background-color: #fb565a;
   width: 260px;
@@ -404,7 +410,7 @@ img {
   width: 360px;
   display: inline-block;
   margin-right: 40px;
-  vertical-align: center;
+  vertical-align: top;
   position: relative;
   margin-bottom: 36px;
 }
@@ -424,6 +430,7 @@ img {
 
 .pagination-catalog {
   width: 460px;
+  margin-top: 51px;
 }
 
 .product-item .card {
@@ -432,6 +439,10 @@ img {
 
 .product-item:hover .card {
   display: block;
+}
+
+.assortment p {
+  white-space: pre-line;
 }
 
 .card {
@@ -487,7 +498,7 @@ img {
   min-width: 50px;
   height: 50px;
   padding-right: 10px;
-  vertical-align: center;
+  vertical-align: top;
 }
 
 .pagination-catalog a {
