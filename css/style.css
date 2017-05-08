@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -254,7 +256,6 @@ img {
 
 .modal {
   width: 960px;
-  margin: 0 auto;
   padding: 73px 100px 85px;
   color: #444444;
   position: absolute;
