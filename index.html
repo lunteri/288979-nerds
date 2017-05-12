@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
@@ -14,10 +14,10 @@
     <div class="container clearfix">
       <nav class="navigation clearfix">
         <div class="logo">
-          <a href="index.html"><img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"></a>
+          <a><img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"></a>
         </div>
         <ul class="main-navigation">
-          <li><a href="index.html" class="active-nav">Студия</a></li>
+          <li><a class="active-nav">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
@@ -44,17 +44,16 @@
                     <p>Математически выверенный дизайн
                       <br> для вашего сайта или мобильного приложения.</p> <a class="btn" href="#">Узнать больше</a> </div>
                 </div>
-              </div>
               <div class="slide">
                 <div class="slide-text">
                   <div class="slide-title">Любим математику, как никто другой</div>
                   <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p> <a class="btn" href="#">Узнать больше</a> </div>
               </div>
-            </div>
             <div class="slide">
               <div class="slide-text">
                 <div class="slide-title">Только ночь, только хардкор</div>
                 <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> <a class="btn" href="#">Узнать больше</a> </div>
+            </div>
             </div>
           </section>
         </div>
@@ -134,17 +133,18 @@
   </footer>
   <div class="modal">
     <form name="write-us" action="?" method="post">
+     <a href="#" class="close-modal">Закрыть</a>
       <h3>Напишите нам</h3>
       <div class="half-width">
         <div class="flex-el">
           <label for="name">Ваше имя</label>
-          <input type="text" class="modal-placeholder"name="name" id="name" placeholder="Представьтесь, пожалуйста"> </div>
+          <input type="text" class="modal-placeholder" name="name" id="name" placeholder="Представьтесь, пожалуйста"> </div>
         <div class="flex-el">
           <label for="email">Ваш e-mail:</label>
           <input type="email" class="modal-placeholder" name="email" id="email" placeholder="Для отправки ответа"> </div>
       </div>
       <label for="text">Текст письма:</label>
-      <textarea name="text" class="modal-placeholder" id="text" rows="10" placeholder="В свободной форме"></textarea>
+      <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
       <input type="submit" class="btn" value="Отправить"> </form>
   </div>
 </body>
