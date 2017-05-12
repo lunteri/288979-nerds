@@ -51,7 +51,7 @@ img {
   text-align: center;
   white-space: nowrap;
   padding: 37px 0px 109px 0px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .main-header {
@@ -970,11 +970,9 @@ img {
 }
 
 .range-controls .bar {
-  width: 70%;
   height: 2px;
   background: #00ca74;
-  margin-left: 6%;
-  width: 57%;
+  width: 60%;
 }
 
 .range-controls .toggle {
@@ -1082,6 +1080,7 @@ img {
   z-index: 1000;
   position: absolute;
   opacity: 0.1;
+  pointer-events: none;
 }
 
 .filter-type label:hover::before {
@@ -1090,6 +1089,7 @@ img {
 
 .filter-type input:disabled + label {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 .filter-features legend {
@@ -1129,6 +1129,7 @@ img {
 
 .filter-features input:disabled + label {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 input.btn-form {
@@ -1380,11 +1381,14 @@ input.btn-form:active {
 }
 
 .pagination-catalog .next:hover {
-  padding: 17px 75px 15px 76px;
+  background-color: #dfdfdf;
 }
 
-.pagination-catalog .next:hover {
+.pagination-catalog .next:active {
   padding: 14px 75px 15px 76px;
+  background-color: #d5d5d5;
+  border-top: 3px solid #bfbfbf;
+
 }
 
 .pagination-catalog {
