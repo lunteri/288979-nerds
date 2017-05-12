@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -7,60 +8,77 @@
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container clearfix">
       <nav class="navigation clearfix">
         <div class="logo">
-          <a href="/"><img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"></a>
+          <a href="index.html"><img src="img/nerds-logo.png" width="161" height="65" alt="nerds-logo"></a>
         </div>
         <ul class="main-navigation">
-          <li><a href="#">Студия</a></li>
+          <li><a href="index.html" class="active-nav">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="basket"> <a href="#">Корзина</a> </div>
-    </div>
-  </header>
-  <section class="slider">
-    <div class="container">
-      <input type="radio" name="slider" id="slide1">
-      <div class="slider-item"> <b>Долго, дорого, скрупулезно.</b>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p> <a href="#" class="slider-btn">Узнать больше</a> </div>
-      <input type="radio" name="slider" id="slide2">
-      <div class="slider-item"> <b>Любим математику как никто другой</b>
-        <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p> <a href="#" class="slider-btn">Узнать больше</a> </div>
-      <input type="radio" name="slider" id="slide3">
-      <div class="slider-item"> <b>Только ночь, только хардкор</b>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> <a href="#" class="slider-btn">Узнать больше</a> </div>
-      <div class="label">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
       </div>
-    </div>
-  </section>
+      <div class="slider-container">
+        <div class="container">
+          <section class="sl">
+            <div class="slider">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
+              <div class="slides">
+                <div class="slide">
+                  <div class="slide-text">
+                    <div class="slide-title">Долго, дорого, скрупулезно</div>
+                    <p>Математически выверенный дизайн
+                      <br> для вашего сайта или мобильного приложения.</p> <a class="btn" href="#">Узнать больше</a> </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title">Любим математику, как никто другой</div>
+                  <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p> <a class="btn" href="#">Узнать больше</a> </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только ночь, только хардкор</div>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> <a class="btn" href="#">Узнать больше</a> </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  </header>
   <main class="content">
     <div class="container">
       <section class="features">
         <ul class="features-list">
           <li class="features-list-item sites">
             <h2 class="header-main">Веб-сайты</h2>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> <a href="#" class="features-btn">Заказать</a> </li>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p> <a href="#" class="features-btn red">Заказать</a> </li>
           <li class="features-list-item apps">
             <h2 class="header-main">Приложения</h2>
-            <p>Покорите топ-10 приложений в Appstore и Google Play.</p> <a href="#" class="features-btn">Заказать</a> </li>
+            <p>Покорите топ-10 приложений в Appstore и Google Play.</p> <a href="#" class="features-btn green">Заказать</a> </li>
           <li class="features-list-item presentation">
             <h2 class="header-main">Презентации</h2>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p> <a href="#" class="features-btn">Заказать</a> </li>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p> <a href="#" class="features-btn yellow">Заказать</a> </li>
         </ul>
       </section>
       <div class="about clearfix">
         <div class="product-col-left">
           <p>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расёт превыше креатива. Работаем не покладая рук, как роботы.</p> <strong>Выполняем заказы на разработку:</strong>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p> <strong>Выполняем заказы на разработку:</strong>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -68,10 +86,10 @@
           </ul>
         </div>
         <div class="product-col-right"> <span>С 2004 года любим точность во всем:</span>
-          <ul class="features">
-            <li><b>146%</b>Уровень самоотдачи</li>
-            <li><b>100%</b>Соблюдение сроков</li>
-            <li><b>50%</b>Минимальная предоплата</li>
+          <ul class="features-col-left">
+            <li><b>146<span class="procent">%</span></b> Уровень самоотдачи</li>
+            <li><b>100<span class="procent">%</span></b> Соблюдение сроков</li>
+            <li><b>50<span class="procent">%</span></b> Минимальная предоплата</li>
           </ul>
         </div>
       </div>
@@ -92,50 +110,42 @@
         </ul>
       </section>
     </div>
-    <div class="map"> 
-      <div class="write">
-        <p>Nёrds design studio</p>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-        <p>тел: +7 (812) 275 75-75</p>
-        <div class="map-btn"> <a href="#">Напишите нам</a> </div>
-      </div>
-    </div>
   </main>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4497416011177!2d30.31952940151029!3d59.93874980398695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494600754392" allowfullscreen></iframe>
+    <div class="write">
+      <p class="write-header">Nёrds design studio</p>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+      <p>тел: +7 (812) 275 75-75</p>
+      <div class="map-btn"> <a href="#">Напишите нам</a> </div>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <ul class="social-item">
-        <li class="social-item-list">
-          <a href="#" title="vk.com">Вконтакте</a>
-        </li>
-        <li class="social-item-list">
-          <a href="#" title="facebook.com">Фейсбук</a>
-        </li>
-        <li class="social-item-list">
-          <a href="#" title="instagram.com">Инстаграм</a>
-        </li>
+        <li> <a href="#" title="vk.com" class="social-item-list vk">Вконтакте</a> </li>
+        <li> <a href="#" title="facebook.com" class="social-item-list fb">Фейсбук</a> </li>
+        <li> <a href="#" title="instagram.com" class="social-item-list inst">Инстаграм</a> </li>
       </ul>
       <div class="friends"> <strong>Давайте дружить, это выгодно!</strong>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
-    <div class="modal">
+  <div class="modal">
     <form name="write-us" action="?" method="post">
       <h3>Напишите нам</h3>
       <div class="half-width">
         <div class="flex-el">
           <label for="name">Ваше имя</label>
-          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-        </div>
+          <input type="text" class="modal-placeholder"name="name" id="name" placeholder="Представьтесь, пожалуйста"> </div>
         <div class="flex-el">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+          <input type="email" class="modal-placeholder" name="email" id="email" placeholder="Для отправки ответа"> </div>
       </div>
-      </div>
-        <label for="text">Текст письма:</label>
-        <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
-      <input type="submit" class="btn" value="Отправить">
-    </form>
+      <label for="text">Текст письма:</label>
+      <textarea name="text" class="modal-placeholder" id="text" rows="10" placeholder="В свободной форме"></textarea>
+      <input type="submit" class="btn" value="Отправить"> </form>
   </div>
 </body>
 </html>
