@@ -169,7 +169,7 @@ img {
   background-color: #eeeeee;
   width: 1160px;
   position: relative;
-  height: 430px;
+  min-height: 430px;
 }
 
 .slider input[type=radio] {
