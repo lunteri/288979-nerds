@@ -48,16 +48,17 @@ img {
 /* Шапка сайта */
 
 .header-catalog h1 {
-  font-size: 57px;
+  font-size: 55px;
   line-height: 55px;
   text-align: center;
-  white-space: nowrap;
   padding: 37px 0px 109px 0px;
   font-weight: 800;
 }
 
 .main-header {
   background-color: #eeeeee;
+  padding-top: 27px;
+  margin-bottom: -7px;
 }
 
 .logo {
@@ -122,6 +123,7 @@ img {
   pointer-events: none;
 }
 
+
 .basket a {
   text-decoration: none;
   color: #000000;
@@ -179,14 +181,13 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 45px;
+  bottom: 52px;
   left: 50%;
-  width: 200px;
-  height: 64px;
+  width: 194px;
+  height: 63px;
   margin-left: -98px;
   text-align: center;
   z-index: 1000;
-}
 
 .slider-controls label {
   display: inline-block;
@@ -258,7 +259,7 @@ img {
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-color: #eeeeee;
-  background-position: 94% 15px;
+  background-position: 93% 22px;
 }
 
 .slide:nth-child(2) {
@@ -300,7 +301,7 @@ img {
 }
 
 .slide:nth-child(2) .slide-text {
-  padding: 21px 1px 0px 2px;
+  padding: 53px 1px 0px 2px;
 }
 
 .slide:nth-child(3) .slide-text {
@@ -457,7 +458,7 @@ img {
 .product-col-left p:first-child {
   font-size: 45px;
   line-height: 45px;
-  padding-left: 5px;
+  font-weight: bold;
   padding-top: 35px;
   margin-top: 0;
   margin-bottom: -8px;
@@ -466,7 +467,7 @@ img {
 .product-col-right {
   float: right;
   width: 355px;
-  padding-top: 268px;
+  padding-top: 270px;
   background-image: url(../img/nerds-illustration.jpg);
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -487,6 +488,7 @@ img {
 
 .product-col-left li {
   position: relative;
+  margin-left: -5px;
 }
 
 .product-col-left li::before {
@@ -503,7 +505,8 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 30px;
+  margin-left: -5px;
 }
 
 .product-col-left span {
@@ -533,7 +536,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 .product-col-right .procent {
@@ -628,8 +631,8 @@ img {
   width: 319px;
   position: absolute;
   background-color: #ffffff;
-  left: 321px;
-  top: 55px;
+  left: 7%;
+  top: 56px;
   box-sizing: border-box;
   padding: 35px 50px 48px 50px;
   color: #666666;
@@ -637,23 +640,36 @@ img {
 
 .write-header {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
+  padding-bottom: 10px;
   line-height: 20px;
+}
+
+.address {
+  white-space: pre-line;
+  line-height: 19px;
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+
+.phone {
+  margin-top: -7px;
+  margin-bottom: 32px;
 }
 
 .map-btn a {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   background-color: #fb565a;
   min-height: 34px;
   text-align: center;
   padding-top: 16px;
   text-transform: uppercase;
-  outline: none;
+  outline: 0;
   margin-top: 30px;
-  border-radius: 3px;
+ border-radius: 3px;
 }
 
 .map-btn:hover a {
@@ -667,7 +683,7 @@ img {
 }
 
 .map {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
   background-image: url("../img/map.jpg");
   background-color: #eae8e0;
   background-repeat: no-repeat;
@@ -714,13 +730,13 @@ img {
 .friends {
   width: 560px;
   float: left;
-  margin-left: 124px;
+  margin-left: 119px;
 }
 
 .friends strong {
-  font-size: 35px;
-  white-space: nowrap;
-  line-height: 43px;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 800;
 }
 
 .friends p {
@@ -785,6 +801,7 @@ img {
 
 .modal {
   display: none;
+  font-family: "Roboto", "Arial", sans-serif;
   width: 960px;
   padding: 73px 100px 85px;
   color: #444444;
@@ -845,6 +862,7 @@ img {
 
 .modal textarea {
   margin-top: 13px;
+  font-family: "Roboto", "Arial", sans-serif;
   margin-bottom: 47px;
   padding: 16px 14px 14px;
   resize: none;
@@ -866,6 +884,7 @@ img {
   color: #ffffff;
   background-color: #fb565a;
   width: 260px;
+  font-family: "Roboto", "Arial", sans-serif;
   padding: 19px 84px 18px 82px;
   text-transform: uppercase;
   font-size: 16px;
@@ -897,7 +916,7 @@ img {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #d7373b;
+  background-color: none;
   background-position: 86px -343px;
   background-image: url("../img/sprite.png");
   top: 78px;
@@ -905,12 +924,15 @@ img {
   opacity: 0.3;
 }
 
+.modal input {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
 /*Каталог*/
 
 /*Фильтры*/
 
 .header-catalog {
-  width: 730px;
   margin: auto;
   margin-bottom: 57px;
 }
