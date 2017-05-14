@@ -26,38 +26,43 @@
       <div class="basket"> <a href="basket.html" target="_blank">Корзина</a> </div>
     </div>
     <div class="slider-container">
-      <div class="container">
-        <section class="sl">
-          <div class="slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
-            <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-            </div>
-            <div class="slides">
-              <div class="slide">
-                <div class="slide-text">
-                  <div class="slide-title">Долго, дорого, скрупулезно</div>
-                  <p>Математически выверенный дизайн
-                    <br> для вашего сайта или мобильного приложения.</p> <a class="btn" href="#">Узнать больше</a> </div>
+      <section class="sl">
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого,
+                  скрупулезно.
+                </div>
+                <p>Математически выверенный дизайн
+                     для вашего сайта или мобильного приложения.</p> <a class="btn" href="#">Узнать больше</a> 
+                </div>
               </div>
               <div class="slide">
                 <div class="slide-text">
-                  <div class="slide-title">Любим математику, как никто другой</div>
-                  <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p> <a class="btn" href="#">Узнать больше</a> </div>
+                  <div class="slide-title">Любим математику,
+                   как никто другой</div>
+                  <p>Никакого креатива, только математические формулы
+                   для расчёта идеальных пропорций</p> <a class="btn" href="#">Узнать больше</a> </div>
               </div>
               <div class="slide">
                 <div class="slide-text">
-                  <div class="slide-title">Только ночь, только хардкор</div>
-                  <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> <a class="btn" href="#">Узнать больше</a> </div>
+                  <div class="slide-title">Только ночь,
+                   только хардкор</div>
+                  <p>Работать днем, как все? Мы против этого. 
+                  Ближе к полуночи работа только начинается.</p> <a class="btn" href="#">Узнать больше</a> </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
     </div>
   </header>
   <main class="content">
@@ -121,7 +126,7 @@
       <p class="address">191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </p>
       <p class="phone">тел: +7 (812) 275 75-75</p>
-      <div class="map-btn"> <a href="write-us.html" target="_blank">Напишите нам</a> </div>
+      <div class="map-btn"> <a href="write-us.html" id="open-modal" target="_blank">Напишите нам</a> </div>
     </div>
   </div>
   <footer>
@@ -136,9 +141,9 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="modal">
     <form name="write-us" action="?" method="post">
-      <a href="#" class="close-modal">Закрыть</a>
+      <a href="#" id="close-modal" class="close-modal">Закрыть</a>
       <h3>Напишите нам</h3>
       <div class="half-width">
         <div class="flex-el">
