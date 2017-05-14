@@ -52,7 +52,7 @@ img {
   line-height: 55px;
   text-align: center;
   padding: 37px 0px 109px 0px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .main-header {
@@ -660,7 +660,8 @@ img {
 .map-btn a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  font-weight: 500;
   background-color: #fb565a;
   min-height: 34px;
   text-align: center;
@@ -737,7 +738,7 @@ img {
 .friends strong {
   font-size: 36px;
   line-height: 45px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .friends p {
