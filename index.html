@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
@@ -8,7 +7,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="main-header">
     <div class="container clearfix">
@@ -23,7 +21,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div class="basket"> <a href="basket.html" target="_blank">Корзина</a> </div>
+      <div class="basket"> 
+       <a href="basket.html" target="_blank">Корзина</a> 
+      </div>
     </div>
     <div class="slider-container">
       <section class="sl">
@@ -43,22 +43,29 @@
                   скрупулезно.
                 </div>
                 <p>Математически выверенный дизайн
-                     для вашего сайта или мобильного приложения.</p> <a class="btn" href="#">Узнать больше</a> 
+                     для вашего сайта или мобильного приложения.</p> 
+                <a class="btn" href="#">Узнать больше</a> 
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любим математику,
+                   как никто другой
+                </div>
+                  <p>Никакого креатива, только математические формулы
+                   для расчёта идеальных пропорций</p> 
+                  <a class="btn" href="#">Узнать больше</a> 
                 </div>
               </div>
               <div class="slide">
                 <div class="slide-text">
-                  <div class="slide-title">Любим математику,
-                   как никто другой</div>
-                  <p>Никакого креатива, только математические формулы
-                   для расчёта идеальных пропорций</p> <a class="btn" href="#">Узнать больше</a> </div>
-              </div>
-              <div class="slide">
-                <div class="slide-text">
                   <div class="slide-title">Только ночь,
-                   только хардкор</div>
+                   только хардкор
+                  </div>
                   <p>Работать днем, как все? Мы против этого. 
-                  Ближе к полуночи работа только начинается.</p> <a class="btn" href="#">Узнать больше</a> </div>
+                  Ближе к полуночи работа только начинается.</p> 
+                  <a class="btn" href="#">Узнать больше</a> 
+                </div>
               </div>
             </div>
           </div>
@@ -72,14 +79,20 @@
           <li class="features-list-item sites">
             <h2 class="header-main">Веб-сайты</h2>
             <p>Мир никогда не будет прежним
-             после того как увидит ваш сайт!</p> <a href="#" class="features-btn red">Заказать</a> </li>
+             после того как увидит ваш сайт!</p> 
+             <a href="#" class="features-btn red">Заказать</a> 
+          </li>
           <li class="features-list-item apps">
             <h2 class="header-main">Приложения</h2>
-            <p>Покорите топ-10 приложений в Appstore и Google Play.</p> <a href="#" class="features-btn green">Заказать</a> </li>
+            <p>Покорите топ-10 приложений в Appstore и Google Play.</p> 
+            <a href="#" class="features-btn green">Заказать</a> 
+          </li>
           <li class="features-list-item presentation">
             <h2 class="header-main">Презентации</h2>
             <p>Вы даже не подозреваете,
-             насколько вы изумительны!</p> <a href="#" class="features-btn yellow">Заказать</a> </li>
+             насколько вы изумительны!</p> 
+            <a href="#" class="features-btn yellow">Заказать</a> 
+          </li>
         </ul>
       </section>
       <div class="about clearfix">
@@ -93,7 +106,8 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="product-col-right"> <span>С 2004 года любим точность во всем:</span>
+        <div class="product-col-right"> 
+          <span>С 2004 года любим точность во всем:</span>
           <ul class="features-col-left">
             <li><b>146<span class="procent">%</span></b> Уровень самоотдачи</li>
             <li><b>100<span class="procent">%</span></b> Соблюдение сроков</li>
@@ -126,36 +140,44 @@
       <p class="address">191186, Санкт-Петербург, 
       ул. Б. Конюшенная, д. 19/8 </p>
       <p class="phone">тел: +7 (812) 275-75-75</p>
-      <div class="map-btn"> <a href="write-us.html" id="open-modal" target="_blank">Напишите нам</a> </div>
+      <div class="map-btn"> 
+        <a href="write-us.html" id="open-modal" target="_blank">Напишите нам</a> 
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <form name="write-us" action="?" method="post" id="modal-form">
+        <a href="#" id="close-modal" class="close-modal">Закрыть</a>
+        <h3>Напишите нам</h3>
+        <div class="half-width">
+          <div class="flex-el">
+            <label for="name">Ваше имя</label>
+            <input type="text" class="modal-placeholder" name="name" id="name" placeholder="Представьтесь, пожалуйста"> 
+          </div>
+          <div class="flex-el">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" class="modal-placeholder" name="email" id="email" placeholder="Для отправки ответа"> 
+          </div>
+        </div>
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
+        <input type="submit" class="btn" value="Отправить"> 
+      </form>
     </div>
   </div>
   <footer>
-    <div class="container">
+    <div class="container clearfix">
       <ul class="social-item">
         <li> <a href="#" title="vk.com" class="social-item-list vk">Вконтакте</a> </li>
         <li> <a href="#" title="facebook.com" class="social-item-list fb">Фейсбук</a> </li>
         <li> <a href="#" title="instagram.com" class="social-item-list inst">Инстаграм</a> </li>
       </ul>
-      <div class="friends"> <strong>Давайте дружить, это выгодно!</strong>
+      <div class="friends"> 
+        <strong>Давайте дружить, это выгодно!</strong>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
-  <div class="modal" id="modal">
-    <form name="write-us" action="?" method="post">
-      <a href="#" id="close-modal" class="close-modal">Закрыть</a>
-      <h3>Напишите нам</h3>
-      <div class="half-width">
-        <div class="flex-el">
-          <label for="name">Ваше имя</label>
-          <input type="text" class="modal-placeholder" name="name" id="name" placeholder="Представьтесь, пожалуйста"> </div>
-        <div class="flex-el">
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" class="modal-placeholder" name="email" id="email" placeholder="Для отправки ответа"> </div>
-      </div>
-      <label for="text">Текст письма:</label>
-      <textarea name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
-      <input type="submit" class="btn" value="Отправить"> </form>
-  </div>
+
+<script src="js/script.min.js"></script>
 </body>
 </html>

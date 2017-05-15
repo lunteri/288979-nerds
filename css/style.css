@@ -718,6 +718,7 @@ img {
   font-size: 0;
   padding: 0;
   float: left;
+  margin-bottom: 80px;
 }
 
 .social-item-list {
@@ -807,15 +808,16 @@ img {
   width: 960px;
   padding: 73px 100px 85px;
   color: #444444;
-  position: absolute;
   right: 0;
-  bottom: 40px;
+  bottom: -100px;
   left: 0;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 1001;
+  position: absolute;
+  opacity: 0;
 }
 
 .modal h3 {
@@ -928,6 +930,21 @@ img {
 
 .modal input {
   font-family: "Roboto", "Arial", sans-serif;
+}
+
+@keyframes showmodal {
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.show-modal {
+  display: block;
+  animation: showmodal 3s ease 0s 1 normal forwards;
 }
 
 /*Каталог*/
