@@ -944,7 +944,7 @@ img {
 
 .show-modal {
   display: block;
-  animation: showmodal 1s ease 0s 1 normal forwards;
+  animation: showmodal 0.5s ease 0s 1 normal forwards;
 }
 
 /*Каталог*/

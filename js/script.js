@@ -1,17 +1,17 @@
 (function() {
 'use strict';
 
-var modal = document.getElementById('modal');
-var openBtn = document.getElementById('open-modal');
-var closeBtn = document.getElementById('close-modal');
-var emailInp = document.getElementById('email');
-var nameInp = document.getElementById('name');
-var textInp = document.getElementById('text');
-var form = document.getElementById('modal-form');
+var modal = document.getElementById('modal'),
+    openBtn = document.getElementById('open-modal'),
+    closeBtn = document.getElementById('close-modal'),
+    emailInp = document.getElementById('email'),
+    nameInp = document.getElementById('name'),
+    textInp = document.getElementById('text'),
+    form = document.getElementById('modal-form');
 
-openBtn.addEventListener('click', open);
-closeBtn.addEventListener('click', close);
-document.addEventListener('keydown', keyClose);
+if (openBtn) openBtn.addEventListener('click', open);
+if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', keyClose);
 
 function open(e) {
   modal.classList.add('show-modal');
@@ -27,7 +27,7 @@ function close(e) {
 }
 
 function keyClose(e) {
-  if (e.keyCode === 27) {
+  if (e.keyCode === 27 && modal.classList.contains('show-modal')) {
     modal.classList.remove('show-modal');
   }
 }
@@ -36,10 +36,13 @@ form.addEventListener('submit', checkForm);
 
 function checkForm(e) {
   if (!nameInp.value && !textInp.value && !emailInp.value) {
+    alert('Заполните хотя бы одно поле!');
     e.preventDefault();
     return false;
-  }
-  localStorage.setItem('name', nameInp.value);
-  localStorage.setItem('email', emailInp.value);
+}
+
+localStorage.setItem('name', nameInp.value);
+localStorage.setItem('email', emailInp.value);
+  alert('Сообщение получено, спасибо.');
 }
 })();
