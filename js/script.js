@@ -1,4 +1,6 @@
 (function() {
+'use strict';
+
 var modal = document.getElementById('modal');
 var openBtn = document.getElementById('open-modal');
 var closeBtn = document.getElementById('close-modal');
@@ -13,6 +15,8 @@ document.addEventListener('keydown', keyClose);
 
 function open(e) {
   modal.classList.add('show-modal');
+  nameInp.value = localStorage.getItem('name') || '';
+  emailInp.value = localStorage.getItem('email') || '';
   nameInp.focus();
   e.preventDefault();
 }
@@ -31,9 +35,11 @@ function keyClose(e) {
 form.addEventListener('submit', checkForm);
 
 function checkForm(e) {
-  if (nameInp.value && textInp.value && emailInp.value) {
-   return true;
+  if (!nameInp.value && !textInp.value && !emailInp.value) {
+    e.preventDefault();
+    return false;
   }
-  return false;
-} 
-}());
+  localStorage.setItem('name', nameInp.value);
+  localStorage.setItem('email', emailInp.value);
+}
+})();

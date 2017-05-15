@@ -809,7 +809,7 @@ img {
   padding: 73px 100px 85px;
   color: #444444;
   right: 0;
-  bottom: -100px;
+  bottom: -400px;
   left: 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -817,7 +817,6 @@ img {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 1001;
   position: absolute;
-  opacity: 0;
 }
 
 .modal h3 {
@@ -933,18 +932,19 @@ img {
 }
 
 @keyframes showmodal {
-  form {
+  from {
     opacity: 0;
   }
   to {
     opacity: 1;
+    bottom: -100px;
   }
 }
 
 
 .show-modal {
   display: block;
-  animation: showmodal 3s ease 0s 1 normal forwards;
+  animation: showmodal 1s ease 0s 1 normal forwards;
 }
 
 /*Каталог*/
